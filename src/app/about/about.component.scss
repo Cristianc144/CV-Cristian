@@ -1,0 +1,60 @@
+.text-responsive {
+    font-size: 80px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+    vertical-align: center;
+  }
+
+.img-responsive {
+    width: 350px;
+    height: 400px;
+    vertical-align: center;
+}
+.description-responsive {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+  
+  /* Agrega reglas de media queries para ajustar la fuente en pantallas más pequeñas */
+  @media (max-width: 992px) {
+    .img-responsive {
+        width: 250px;
+        height: 300px;
+        vertical-align: center;
+    }
+    .description-responsive {
+        font-size: 20px;
+        text-align: justify;
+    }
+  }
+  @media (max-width: 768px) {
+    .text-responsive {
+      font-size: 45px;
+      vertical-align: center;
+    }
+    .description-responsive {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .img-responsive {
+        width: 170px;
+        height: 220px;
+        vertical-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .text-responsive {
+      font-size: 30px;
+      vertical-align: center;
+    }
+    .description-responsive {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .img-responsive {
+        width: 170px;
+        height: 220px;
+        vertical-align: center;
+    }
+  }

@@ -13,6 +13,8 @@ export class PortfolioComponent {
   repositorio1: any = [];
   repositorio2: any = [];
   repositorio3: any = [];
+  repositorio4: any = [];
+  isHovered = false;
 
   ngOnInit() {
     this.appComponent.getRepositorio1().subscribe((data) => {
@@ -32,5 +34,19 @@ export class PortfolioComponent {
       console.log("esta data de api que arroja?")
       console.log(this.repositorio3)
     });
+
+    this.appComponent.getRepositorio4().subscribe((data) => {
+      this.repositorio4 = data;
+      console.log("esta data de api que arroja?")
+      console.log(this.repositorio4)
+    });
+  }
+
+  onHover(): void {
+    this.isHovered = true;
+  }
+
+  onHoverOut(): void {
+    this.isHovered = false;
   }
 }

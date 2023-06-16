@@ -1,0 +1,22 @@
+.text-responsive {
+    font-size: 60px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+  }
+
+
+@media (max-width: 992px) {
+    .text-responsive {
+        font-size: 60px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+      }
+}
+
+@media (max-width: 768px) {
+    .text-responsive {
+        font-size: 45px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+      }
+}
+
+@media (max-width: 576px) {
+    .text-responsive {
+        font-size: 30px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+      }
+}

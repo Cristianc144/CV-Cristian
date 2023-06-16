@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <h1 style="font-size: 60px;"><strong>My Portfolio</strong></h1>
+        <h1 class="text-responsive"><strong>My Portfolio</strong></h1>
     </div>
     <br><br>
 
@@ -10,6 +10,7 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
 
       <div class="carousel-inner">
@@ -19,15 +20,22 @@
             <div class="col-2"></div>
             <div class="col-8">
               <h3>{{repositorio3.name}}</h3>
-              <p><strong>{{repositorio3.description}}</strong></p>
             </div>
             <div class="col-2"></div>
           </div>
           <div class="row">
             <div class="col-2"></div>
-            <div class="col-8">
-              <a href="https://github.com/Cristianc144/Mokepon-game"><img src="../../assets/CapturaMokepon.PNG" class="d-block w-100" alt="First slide" style="height: 500px; border-radius: 30px;"></a>
+            <div class="col-8 image-container p-0 " style="border-radius: 30px;" (mouseenter)="onHover()" (mouseleave)="onHoverOut()">
+              <img src="../../assets/CapturaMokepon.PNG" class="d-block w-100 img-fluid" alt="First slide" style="max-height: 350px; border-radius: 30px;">
+              <div class="hover-content" *ngIf="isHovered">
+                <a href="https://github.com/Cristianc144/Mokepon-game" style="cursor: pointer;" ><i class="bi bi-github size-icon" style="color: white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://cristianc144.github.io/Mokepon-game/mokepon.html" style="cursor: pointer;" ><i class="bi bi-link-45deg size-icon" style="color: white;"></i></a>
+              </div>
             </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
             <div class="col-2"></div>
           </div>
         </div>
@@ -37,15 +45,22 @@
             <div class="col-2"></div>
             <div class="col-8">
               <h3>{{repositorio1.name}}</h3>
-              <p><strong>{{repositorio1.description}}</strong></p>
             </div>
             <div class="col-2"></div>
           </div>
           <div class="row">
             <div class="col-2"></div>
-            <div class="col-8">
-              <a href="https://github.com/Cristianc144/Sistema-almacenamiento-Registros"><img src="../../assets/CapturaRegistros.PNG" class="d-block w-100" alt="Second slide" style=" height: 500px; border-radius: 30px;"></a>
+            <div class="col-8 image-container p-0" (mouseenter)="onHover()" (mouseleave)="onHoverOut()">
+            <img src="../../assets/CapturaRegistros.PNG" class="d-block w-100 img-fluid" alt="Second slide" style="max-height: 350px; border-radius: 30px;">
+              <div class="hover-content" *ngIf="isHovered">
+                <a href="https://github.com/Cristianc144/Sistema-almacenamiento-Registros" style="cursor: pointer;"><i class="bi bi-github size-icon" style="color: white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="" style="cursor: pointer;"><i class="bi bi-link-45deg size-icon" style="color: white;"></i></a>
+              </div>
             </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
             <div class="col-2"></div>
           </div>
         </div>
@@ -55,15 +70,47 @@
             <div class="col-2"></div>
             <div class="col-8">
               <h3>{{repositorio2.name}}</h3>
-              <p><strong>{{repositorio2.description}}</strong></p>
             </div>
             <div class="col-2"></div>
           </div>
           <div class="row">
             <div class="col-2"></div>
-            <div class="col-8">
-              <a href="https://github.com/Cristianc144/Paginaventas-JavaScript-cursoPlatzi"><img src="../../assets/CapturaVentas.PNG" class="d-block w-100" alt="Third slide" style="height: 500px; border-radius: 30px;"></a>
+            <div class="col-8 image-container p-0" (mouseenter)="onHover()" (mouseleave)="onHoverOut()">
+              <img src="../../assets/CapturaVentas.PNG" class="d-block w-100 img-fluid" alt="Third slide" style="max-height: 350px; border-radius: 30px;">
+              <div class="hover-content" *ngIf="isHovered" >
+                <a href="https://github.com/Cristianc144/Paginaventas-JavaScript" style="cursor: pointer;"><i class="bi bi-github size-icon" style="color: white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                <a href="https://cristianc144.github.io/Paginaventas-JavaScript/" style="cursor: pointer;"><i class="bi bi-link-45deg size-icon" style="color: white;"></i></a>
+              </div>
             </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <div class="col-2"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row text-center">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <h3>{{repositorio4.name}}</h3>
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 image-container p-0" (mouseenter)="onHover()" (mouseleave)="onHoverOut()">
+              <img src="../../assets/CapturaContadorClics.PNG" class="d-block w-100 img-fluid" alt="Fourth slide" style="max-height: 350px; border-radius: 30px;">
+              <div class="hover-content" *ngIf="isHovered" >
+                <a href="https://github.com/Cristianc144/Contador-clicks" style="cursor: pointer;"><i class="bi bi-github size-icon" style="color: white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                <a href="" style="cursor: pointer;"><i class="bi bi-link-45deg size-icon" style="color: white;"></i></a>
+              </div>
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
             <div class="col-2"></div>
           </div>
         </div>

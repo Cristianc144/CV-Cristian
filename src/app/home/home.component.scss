@@ -1,0 +1,44 @@
+.text-responsive {
+    font-size: 80px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+    vertical-align: center;
+  }
+
+.img-responsive {
+    width: 300px;
+    height: 450px;
+    vertical-align: center;
+}
+
+
+  
+  /* Agrega reglas de media queries para ajustar la fuente en pantallas más pequeñas */
+  @media (max-width: 992px) {
+    .img-responsive {
+        width: 250px;
+        height: 380px;
+        vertical-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .text-responsive {
+      font-size: 45px;
+      vertical-align: center;
+    }
+    .img-responsive {
+        width: 250px;
+        height: 380px;
+        vertical-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .text-responsive {
+      font-size: 30px;
+      vertical-align: center;
+    }
+    .img-responsive {
+        width: 250px;
+        height: 380px;
+        vertical-align: center;
+    }
+  }
