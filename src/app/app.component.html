@@ -1,25 +1,105 @@
-<div style="background: linear-gradient(to right, #156696, #20db9d);">
+<div class="animation-background font-page">
   <div class="container">
-    <div class="row">
-    <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-barra-superior></app-barra-superior></div>
+    <!--<nav class="row navbar fixed-top animation-background" style="padding-bottom: 20px;">
+      <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-barra-superior></app-barra-superior></div>
+    </nav>-->
+    <!--PRUEBA-->
+    <nav class="row navbar navbar-expand-lg fixed-top animation-background p-3 mb-3">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-7">
+            <i class="bi bi-c-circle-fill size-icon" style="color: lightblue; font-family: 'Bungee Shade', cursive;">&nbsp;<strong>Cristian</strong></i>     
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12 text-center content">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <!--<button type="button" class="btn button-style" (click)="scrollHaciaHome()" ><strong>Home</strong></button>-->
+                <button type="button" class="btn button-style" (click)="scrollHaciaAbout()"><strong>About</strong></button>
+                <button type="button" class="btn button-style" (click)="scrollHaciaSkills()"><strong>Skills</strong></button>
+                <button type="button" class="btn button-style" (click)="scrollHaciaPortfolio()"><strong>Portfolio</strong></button>
+              </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-end content">
+        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-light button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <strong>Contact me</strong>
+            </button>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 text-end button-content">
+          <!-- Button para pantallas pequeñas -->
+            <div class="container-fluid">
+              <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-center col-11 text-end" id="offcanvasNavbarLabel">Main Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav text-center flex-grow-1 pe-3">
+                    <li class="nav-item" style="padding: 15px;">
+                      <a class="nav-link active"  (click)="scrollHaciaAbout()" style="cursor: pointer;">About</a>
+                    </li>
+                    <li class="nav-item" style="padding: 15px;">
+                      <a class="nav-link active"  (click)="scrollHaciaSkills()" style="cursor: pointer;">Skills</a>
+                    </li>
+                    <li class="nav-item" style="padding: 15px;">
+                      <a class="nav-link active"  (click)="scrollHaciaPortfolio()" style="cursor: pointer;">Portfolio</a>
+                    </li>
+                    <li style="padding: 15px;">
+                      <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <strong>Contact me</strong>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <!--<div class="row">
+      <div class="col-12 mt-3 pt-3" data-aos="fade-down"><app-home id="home"></app-home></div>
+    </div>-->
+    <div class="row" style=" padding-top: 80px;">
+      <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-about id="about"></app-about></div>
     </div>
     <div class="row">
-      <div class="col-12 mt-3 pt-3" data-aos="flip-up"><app-home id="home"></app-home></div>
-    </div>
-    <div class="row">
-      <div class="col-12 mt-3 pt-3" data-aos="fade-down"><app-about id="about"></app-about></div>
-    </div>
-    <div class="row">
-      <div class="col-12 mt-3 pt-3" data-aos="flip-right"><app-skills id="skills"></app-skills></div>
+      <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-skills id="skills"></app-skills></div>
     </div>
     <br><br><br>
     <div class="row">
-      <div class="col-12 mt-3 pt-3" data-aos="fade-up-left"><app-portfolio id="portfolio"></app-portfolio></div>
+      <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-portfolio id="portfolio"></app-portfolio></div>
     </div>
     <br><br>
     <div class="row">
-      <div class="col-12 mt-3 pt-3" data-aos="zoom-out-right"><app-contact id="contact"></app-contact></div>
+      <div class="col-12 mt-3 pt-3" data-aos="fade-up"><app-contact id="contact"></app-contact></div>
     </div>
   </div>
   <br><br>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><strong>Contact me</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Phone: +57 3204854630</strong></p>
+            <P><strong>Email: cfcaicedoca@unal.edu.co</strong></P>
+            <div>
+                <strong>Github</strong> &nbsp;
+                <a style="font-size: 48px;" href="https://github.com/Cristianc144" style="cursor: pointer; color: black;"><i class="bi bi-github"></i></a> &nbsp;
+            </div>
+            
+            <div>
+                <strong>LinkedIn</strong> &nbsp;
+                <a style="font-size: 48px;" href="https://www.linkedin.com/in/cristian-ferney-caicedo-castillo-a68646250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIanqtqZIRfKWGnD9Q%2Bcd6A%3D%3D" style="cursor: pointer; color: black;"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><strong>Done</strong></button>
+        <!--<button type="button" class="btn btn-primary">Guardar cambios</button>-->
+        </div>
+    </div>
+    </div>
+</div>
 </div>

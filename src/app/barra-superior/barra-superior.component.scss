@@ -1,0 +1,30 @@
+.button-style{
+    font-size: 20px;
+    color: white;
+}
+
+.size-icon{
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .button-style{
+        font-size: 18px;
+        color: white;
+    } 
+
+    .size-icon{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    .button-style{
+        font-size: 14px;
+        color: white;
+    } 
+
+    .size-icon{
+        font-size: 23px;
+    }
+}

@@ -1,7 +1,12 @@
 .text-responsive {
-    font-size: 80px; /* Ajusta el tamaño de fuente base para pantallas anchas */
+    font-size: 50px; /* Ajusta el tamaño de fuente base para pantallas anchas */
     vertical-align: center;
   }
+
+  .description-responsive {
+    font-size: 20px;
+    text-align: justify;
+}
 
 .img-responsive {
     width: 300px;
@@ -21,7 +26,7 @@
   }
   @media (max-width: 768px) {
     .text-responsive {
-      font-size: 45px;
+      font-size: 40px;
       vertical-align: center;
     }
     .img-responsive {
@@ -29,6 +34,10 @@
         height: 380px;
         vertical-align: center;
     }
+    .description-responsive {
+      font-size: 14px;
+      text-align: justify;
+  }
   }
   
   @media (max-width: 576px) {
@@ -41,4 +50,8 @@
         height: 380px;
         vertical-align: center;
     }
+    .description-responsive {
+      font-size: 12px;
+      text-align: justify;
+  }
   }

@@ -1,50 +1,50 @@
 <div class="container">
     <div class="row mt-3 pt-3">
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 text-center">
-            <img src="../../assets/Foto_cris.jpg" class="img-responsive" alt="Responsive image" style="border-radius: 50%;">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center" style="text-align: justify;">
+            <img src="../../assets/Foto_cris.jpg" class="img-responsive" alt="Responsive image" style="border-radius: 30px;">
         </div>
-        <div class="col-2"></div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3 pt-3">
-            <h1 class="text-center text-responsive" ><strong>Bit about me</strong></h1>
-            <br><br>
+        <div class="col-1"></div>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-3 pt-3">
+            <h2 class=" text-responsive">Hi,</h2>
+            <h2 class=" text-responsive">I'm <span style="color: aliceblue;">Cristian Caicedo</span></h2>
+            <h2 class=" text-responsive"><strong>FullStack Developer</strong></h2>
             <p class="description-responsive"><strong>Electronic Engineer and student of Electrical Engineering at National University of Colombia</strong></p>
             <p class="description-responsive"><strong>I consider myself as an extremely motivated person to solve difficult issues to people, using technology as main tool.</strong></p>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#DownloadCV">
+            <button type="button" class="btn btn-outline-light"  data-bs-toggle="modal" data-bs-target="#DownloadCV">
                 <strong>Download CV</strong>
             </button>
         </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="DownloadCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><strong>Download CV</strong></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Select the language</strong></p>
-                        <div class="row">
-                            <div class="col-6 text-center">
-                                <div (click)="downloadEnglishPDF()" style="cursor: pointer;">
-                                    <img type="image/png" rel="icon" src="../assets/icons8-united-kingdom-96.png">
-                                </div>
-                                <button type="button" class="btn btn-info" (click)="downloadEnglishPDF()"><strong>English</strong></button>
+        <!-- Modal -->
+        <div class="modal fade" id="DownloadCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><strong>Download CV</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Select the language</strong></p>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <div (click)="downloadEnglishPDF()" style="cursor: pointer;">
+                                <img type="image/png" rel="icon" src="../assets/icons8-united-kingdom-96.png">
                             </div>
-                            <div class="col-6 text-center">
-                                <div (click)="downloadSpanishPDF()" style="cursor: pointer;">
-                                    <img type="image/png" rel="icon" src="../assets/icons8-spain-96.png">
-                                </div>
-                                <button type="button" class="btn btn-info" (click)="downloadSpanishPDF()"><strong>Spanish</strong></button>
+                            <button type="button" class="btn btn-info" (click)="downloadEnglishPDF()"><strong>English</strong></button>
+                        </div>
+                        <div class="col-6 text-center">
+                            <div (click)="downloadSpanishPDF()" style="cursor: pointer;">
+                                <img type="image/png" rel="icon" src="../assets/icons8-spain-96.png">
                             </div>
+                            <button type="button" class="btn btn-info" (click)="downloadSpanishPDF()"><strong>Spanish</strong></button>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><strong>Done</strong></button>
-                    <!--<button type="button" class="btn btn-primary">Guardar cambios</button>-->
-                    </div>
                 </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><strong>Done</strong></button>
+                <!--<button type="button" class="btn btn-primary">Guardar cambios</button>-->
                 </div>
             </div>
+            </div>
+        </div>
     </div>
 </div>

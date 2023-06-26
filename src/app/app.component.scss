@@ -1,16 +1,80 @@
-.animation {
-    animation-duration: 2s;
-    animation-name: slidein;
-  }
+.animation-background {
+  background: linear-gradient(150deg, #224c6e, #15768d, #20dbbd);
+  background-size: 400% 300%;
+  animation: BgGradient 10s ease infinite;
+}
+
+.font-page{
+  font-family: 'VT323', monospace;
+}
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  @keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 0% 50%;}
   }
+
+  .button-style{
+    font-size: 20px;
+    color: white;
+}
+
+.button{
+  font-size: 20px;
+} 
+
+.size-icon{
+    font-size: 28px;
+}
+
+.button-content{
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .button-style{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .button{
+      font-size: 18px;
+      color: white;
+  } 
+
+    .size-icon{
+        font-size: 26px;
+    }
+
+    .content{
+      display: none;
+    }
+
+    .button-content{
+      display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .button-style{
+        font-size: 14px;
+        color: white;
+    } 
+
+    .size-icon{
+        font-size: 23px;
+    }
+
+    .content{
+      display: none;
+    }
+
+    .button{
+      font-size: 14px;
+      color: white;
+  } 
+
+    .button-content{
+      display: block;
+    }
+}
